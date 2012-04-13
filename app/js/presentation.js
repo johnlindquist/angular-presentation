@@ -14,9 +14,9 @@ function AppCtrl($scope, $http) {
         $scope.pages = data;
     });
 
-    $scope.animateToId = function (id) { //the id to animate, the easing type
+    $scope.animateToId = function (id, container) { //the id to animate, the easing type
         id = "#" + id;
-        var $container = $("#container"); //define the container to move
+        var $container = $(container); //define the container to move
         var left = $(id).position().left;
         var animSpeed = 2000; //set animation speed
         var ease = "easeOutQuart";
@@ -25,10 +25,10 @@ function AppCtrl($scope, $http) {
 }
 
 function MenuCtrl($scope) {
-
+    //placeholder for Menu actions
 }
 
 function PageCtrl($scope) {
-
+    //placeholder for Page actions
 }
 

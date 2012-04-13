@@ -19,7 +19,7 @@
 <body>
 <div id="app" ng-controller="AppCtrl">
     <div id="menu" ng-controller="MenuCtrl">
-        <span class="item {{page.menuItemClass}}" ng-repeat="page in pages" ng-click="animateToId(page.id)">
+        <span class="item {{page.menuItemClass}}" ng-repeat="page in pages" ng-click="animateToId(page.id, '#container')">
             {{page.title}}
         </span>
     </div>
